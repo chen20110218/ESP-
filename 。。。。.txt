@@ -1641,7 +1641,7 @@ local function createCircularMenu()
     local airdropEspButton = Instance.new("TextButton")
     airdropEspButton.Name = "AirdropESPButton"
     airdropEspButton.Size = UDim2.new(1, 0, 0, 30)
-    airdropEspButton.Position = UDim2.new(0, 0, 0, 160)
+    airdropEspButton.Position = UDim2.new(0, 0, 0, 120)
     airdropEspButton.BackgroundColor3 = airdropEspEnabled and Color3.fromRGB(139, 0, 0) or Color3.fromRGB(100, 100, 100)
     airdropEspButton.Text = airdropEspEnabled and "空投透视开启" or "空投透视关闭"
     airdropEspButton.TextColor3 = Color3.fromRGB(255, 255, 255)
