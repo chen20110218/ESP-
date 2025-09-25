@@ -1480,7 +1480,7 @@ local function createCircularMenu()
     rectangleMenu.AnchorPoint = Vector2.new(0.5, 0.5)
     rectangleMenu.BackgroundColor3 = Color3.fromRGB(40, 40, 50)
     rectangleMenu.BorderSizePixel = 0
-    rectangleMenu.Visible = false
+    rectangleMenu.Visible = true
     rectangleMenu.ZIndex = 2
     
     -- 长方形菜单圆角
