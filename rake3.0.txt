@@ -12,7 +12,23 @@ local SETTINGS = {
     
     PLAYER_COLOR = Color3.fromRGB(50, 150, 255),
     TEAM_COLOR = Color3.fromRGB(50, 255, 100),
+        -- 添加名称映射表 - 修改实际显示的名称标签
+    NAME_MAPPING = {
+        -- 玩家名称映射
+        ["Player1"] = "队友1",
+        ["Player2"] = "队友2",
+        ["Player3"] = "队友3",
+        
+        -- 敌人名称映射
+        ["Rake"] = "怪物",
+        ["Monster"] = "敌人",
+        ["Zombie"] = "僵尸",
+        
+        -- 添加更多映射...
+    },
     
+    SHOW_HEALTH = true,
+    SHOW_DISTANCE = true,
     SHOW_HEALTH = true,
     SHOW_DISTANCE = true,
     SHOW_TRACER = true,
@@ -537,7 +553,9 @@ RunService.Heartbeat:Connect(function(deltaTime)
                     data.billboard.ESP_Health.Text = ""
                 end
                 
-                data.billboard.ESP_Name.Text = target.Name
+local displayName = SETTINGS.NAME_MAPPING[target.Name] or target.Name
+    data.billboard.ESP_Name.Text = displayName
+                end
             end
         end
     end
