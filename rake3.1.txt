@@ -35,15 +35,13 @@ local SETTINGS = {
 -- ===== 名称映射表 =====
 local NAME_MAPPING = {
     -- 玩家名称映射
-    [""] = "队友A",
-    ["Player2"] = "队友B",
-    ["Player3"] = "队友C",
+    ["qiaoyanbo12"] = "鸟家家主",
+    ["CS78chen"] = "鸟家大长老",
+    ["HYYNO1"] = "鸟家二长老",
     
     -- 敌人名称映射
-    ["Rake"] = "怪物",
-    ["Monster"] = "怪物",
-    ["Enemy"] = "敌人",
-    ["Zombie"] = "僵尸",
+    ["Rake"] = "鸟家头号大敌",
+    
     
     -- 默认映射（如果没有匹配的映射，则使用原始名称）
     ["DEFAULT"] = function(originalName)
