@@ -755,7 +755,7 @@ local function createTrashLabel(trashPart, distanceInStuds)
         billboard.MaxDistance = trashConfig.maxDistance
         billboard.Enabled = trashEspEnabled
         
-        local textLabel = Instance.new("TextLabel")
+local textLabel = Instance.new("TextLabel")
         textLabel.Size = UDim2.new(1, 0, 1, 0)
         textLabel.BackgroundTransparency = 1
         textLabel.Text = string.format("%s\n%.1f米", trashConfig.tagPrefix, studsToMeters(distanceInStuds))
