@@ -1774,7 +1774,7 @@ local function createCircularMenu()
         local expandTween = TweenService:Create(
             rectangleMenu,
             TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-            {Size = UDim2.new(0, 300, 0, 220)}
+            {Size = UDim2.new(0, 300, 0, 200)}
         )
         expandTween:Play()
     end
