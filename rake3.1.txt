@@ -756,17 +756,17 @@ local function createTrashLabel(trashPart, distanceInStuds)
         billboard.Enabled = trashEspEnabled
         
 local textLabel = Instance.new("TextLabel")
-        textLabel.Size = UDim2.new(1, 0, 1, 0)
-        textLabel.BackgroundTransparency = 1
-        textLabel.Text = string.format("%s\n%.1f米", trashConfig.tagPrefix, studsToMeters(distanceInStuds))
-        textLabel.TextColor3 = trashConfig.labelColor
-        textLabel.TextSize = trashConfig.labelSize
-        textLabel.Font = Enum.Font.SourceSansBold
-        textLabel.TextStrokeTransparency = 0.5
-        textLabel.TextStrokeColor3 = Color3.new(0, 0, 0)
-        
-        textLabel.Parent = billboard
-        billboard.Parent = trashPart
+textLabel.Size = UDim2.new(1, 0, 1, 0)
+textLabel.BackgroundTransparency = 1
+textLabel.Text = string.format("%s\n%.1f米", trashConfig.tagPrefix, studsToMeters(distanceInStuds))
+textLabel.TextColor3 = trashConfig.labelColor
+textLabel.TextSize = trashConfig.labelSize
+textLabel.Font = Enum.Font.SourceSansBold
+textLabel.TextStrokeTransparency = 0.5
+textLabel.TextStrokeColor3 = Color3.new(0, 0, 0)
+
+textLabel.Parent = billboard
+billboard.Parent = trashPart
         
         return billboard
     end
